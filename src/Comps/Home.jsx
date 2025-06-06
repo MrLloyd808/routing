@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
-import { useInView } from 'framer-motion';
+import { useInView } from 'motion/react';
 
 export default function Home() {
 
@@ -8,9 +8,12 @@ export default function Home() {
   const isInView = useInView(myRef);
   useEffect(() => {
     if (isInView) {
-      console.log('Element is in view');
+      
+      console.log('is it true or false:' + isInView)
+    } else if(!isInView) {
+     console.log('not in view')
     }
-  }, []);
+  }, [isInView]);
 
   return (
     <>
@@ -19,7 +22,7 @@ export default function Home() {
     <br />
     <section className='first-home'>
     
- <div className='box' ref={myRef}>
+ <div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -28,7 +31,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -37,7 +40,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -46,7 +49,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -55,7 +58,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -74,7 +77,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -83,7 +86,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -92,7 +95,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -101,7 +104,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -110,7 +113,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -119,7 +122,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -128,7 +131,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
@@ -137,7 +140,7 @@ export default function Home() {
     text text text text text text text text text text
     </p>
 </div>
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
