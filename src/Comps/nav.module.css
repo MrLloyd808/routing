@@ -1,20 +1,30 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: .5em;
     background-color: rgb(3, 10, 19);
     position: sticky;
-   
 }
 
-nav ul {
+
+nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.7rem;
+    
+}
+
+nav * {
+    overflow: visible;
+}
+
+nav ul a  {
+    padding: 2% 0;
 }
 
 nav a, nav a:active {
     text-decoration: none;
-    color: azure;
+    color: aliceblue;
+    
 }

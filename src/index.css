@@ -5,6 +5,12 @@
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+ -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.active {
+  border-bottom: 2px solid seagreen;
 }
 
 body {
@@ -16,12 +22,28 @@ body {
   background-color: #001011;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+#productnav {
+  padding: 1% 2%;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  background-color: #021618;
+  margin-top: 2%;
 }
+
+   #navbtn {
+  padding: .9%;
+  width: 70px;
+  border: 0;
+  border-radius: 50px;
+}
+
+#navbtn .active {
+  border: 0 !important;
+  color: rgb(17, 0, 255);
+}
+

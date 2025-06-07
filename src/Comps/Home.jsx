@@ -1,19 +1,7 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
-import { useInView } from 'motion/react';
 
 export default function Home() {
-
-  const myRef = useRef(null);
-  const isInView = useInView(myRef);
-  useEffect(() => {
-    if (isInView) {
-      
-      console.log('is it true or false:' + isInView)
-    } else if(!isInView) {
-     console.log('not in view')
-    }
-  }, [isInView]);
 
   return (
     <>
@@ -68,7 +56,7 @@ export default function Home() {
     </p>
 </div>
 
-<div className='box' ref={myRef}>
+<div className='box'>
     <h2>lorem</h2>
     <p> 
     text text text text text text text text text text 
