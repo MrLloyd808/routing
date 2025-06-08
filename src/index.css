@@ -42,8 +42,13 @@ body {
   border-radius: 50px;
 }
 
-#navbtn .active {
-  border: 0 !important;
-  color: rgb(17, 0, 255);
+.active #navbtn {
+  border-bottom: 0 ;
+  color: azure;
+  background-color: rgb(85, 105, 124);
 }
 
+#productnav .active{
+  border: 0;
+
+}
