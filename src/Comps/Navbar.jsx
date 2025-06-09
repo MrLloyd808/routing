@@ -6,7 +6,6 @@ export default function Navbar() {
   return (
     <nav>
     <Link to='/'><h2>Website</h2></Link>
-    
     <ul>
         <NavLink to='/contact'><li>Contact</li></NavLink>
         <NavLink to='/about'><li>About</li></NavLink>
